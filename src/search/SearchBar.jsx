@@ -6,7 +6,6 @@ export default function SearchBar(){
     const [searchLocation, setSearchLocation] = useState('')
 
     function handleChange(e){
-
         setSearchLocation(e.target.value);
     }
     function handleSearchButton(){
@@ -21,9 +20,7 @@ export default function SearchBar(){
                     <button onClick = {handleSearchButton} >Search</button>
                 </li>
             </ul>
-            {
-                data && <p>{data.location.country}</p>
-            }
+            
         </>
     )
 }

@@ -1,5 +1,6 @@
 import ContextProvider, { WeatherContext } from "./context/Context"
 import SearchBar from "./search/SearchBar";
+import WeatherDetails from "./weatherDetails/WeatherDetails";
 
 export default function App(){
  
@@ -7,6 +8,7 @@ export default function App(){
     <>
       <ContextProvider>
         <SearchBar/>
+        <WeatherDetails/>
       </ContextProvider>
     </>
   )

@@ -1,7 +1,7 @@
 import { createContext, useEffect } from "react";
 import { useState } from "react";
 
-export const WeatherContext = createContext(null)
+export const WeatherContext = createContext('london')
 
 export default function ContextProvider({children}){
     const [location, setLocation] = useState('london')
