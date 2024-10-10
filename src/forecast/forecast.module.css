@@ -1,0 +1,6 @@
+.main__container{
+    display:flex;
+    padding: 1em;
+    min-width: fit-content;
+    flex-wrap: wrap;
+}
