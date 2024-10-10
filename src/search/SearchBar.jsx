@@ -1,8 +1,10 @@
 import { useContext, useState } from "react"
 import { WeatherContext } from "../context/Context"
+import styles from '../search/searchBar.module.css'
+
 
 export default function SearchBar(){
-    const {data , setLocation} = useContext(WeatherContext)
+    const {setLocation} = useContext(WeatherContext)
     const [searchLocation, setSearchLocation] = useState('')
 
     function handleChange(e){
@@ -13,14 +15,13 @@ export default function SearchBar(){
             setLocation(searchLocation)
     }
     return(
-        <>
+        <div className = {styles.searchbar__container}>
             <ul type = 'none'>
-                <li>
-                    <input type="text" value = {searchLocation} onChange={handleChange} />
-                    <button onClick = {handleSearchButton} >Search</button>
+                <li style={{direction: 'none'}}>
+                    <input className = {styles.input} type="text" value = {searchLocation} onChange={handleChange} placeholder = "Enter Location" />
+                    <button className = {styles.search__btn} onClick = {handleSearchButton} >Search</button>
                 </li>
             </ul>
-            
-        </>
+        </div>
     )
 }

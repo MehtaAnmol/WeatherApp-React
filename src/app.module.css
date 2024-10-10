@@ -1,0 +1,8 @@
+.main__container{
+    border: solid;
+    width: min(1200px, 100%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
