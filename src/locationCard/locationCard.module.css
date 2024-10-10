@@ -1,0 +1,30 @@
+.main__container{
+    border: solid 1px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.top{
+    padding-inline: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bottom{
+    padding-inline: 2em;
+}
+.top > h1 {
+    font-size: 2.7rem;
+}
+
+.c__btn,.f__btn{
+    border: none;
+    background: none;
+}
+.img__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

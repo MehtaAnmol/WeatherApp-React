@@ -1,0 +1,9 @@
+.main__container{
+    border: solid 1px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-inline: 2em;
+    padding-block: 1em;
+}

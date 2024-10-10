@@ -1,4 +1,4 @@
-import ContextProvider, { WeatherContext } from "./context/Context"
+import ContextProvider from "./context/Context"
 import SearchBar from "./search/SearchBar";
 import WeatherDetails from "./weatherDetails/WeatherDetails";
 import style from './app.module.css'
